@@ -5,6 +5,11 @@ img, video{
   height: auto;
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
 .landmarks-grid{
   display: grid;
   grid-gap: 1rem;
@@ -21,6 +26,17 @@ img, video{
 
 .videoWrapper.ratio-16-9{
     padding-bottom: 56.25%; /* 9 ÷ 16 = .5625 which is 56.25% */
+}
+
+.videoWrapper.ratio-4-3{
+    padding-bottom: 75%; /* 3 ÷ 4 = .75 which is 75% */
+}
+
+.videoWrapper.ratio-9-16 {
+    padding-bottom: calc(100vh - 100px); /* Full height minus 100px (to account for possible fixed header or footer */
+    width: calc((100vh - 100px) * (9 / 16)); /* Calculate width based on 9:16 aspect ratio */
+    margin-inline: auto; /* center horizontally */
+    /* 9:16 */
 }
 
 .videoWrapper iframe {

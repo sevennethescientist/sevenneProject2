@@ -1,13 +1,88 @@
+/** font references
+ .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+    
+.changa-one-regular {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.changa-one-regular-italic {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+*/
+
+:root {
+  --heading-color: #FFEE32;
+  --background-color:#149CBE;
+  --text-color: white;
+  --secondary-background-color: #00CCFF ;
+  --secondary-text-color: #B32356 ;
+}
 
 /* basic responsive image css */
+body {
+  background-color: var(--background-color);
+  color: white;
+  justify-content: center;
+  align-content: center;
+  place-items: center;
+}
+
+main {
+  width: 90%;
+  align-content: center;
+}
+
 img, video{
   max-width: 100%;
   height: auto;
 }
 
+
+h1 {
+ display: flex;
+  justify-content: center;
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--heading-color);
+  font-size: 3.5em;
+}
+
 h2 {
   display: flex;
   justify-content: center;
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--heading-color);
+  font-size: 3em;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-size: 1.2em;
+  font-style: normal;
+}
+
+.site-title {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-size: 1.2em;
+  font-style: normal;
 }
 
 .landmarks-grid{
@@ -15,6 +90,27 @@ h2 {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   figure{ margin:0;} /* spacing */
+}
+
+.landmark {
+  background-color: var(--secondary-background-color);
+  border: solid 2px var(--heading-color);
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.2em;
+  color: var(--secondary-text-color);
+
+  border-radius: 15px;
+  overflow: hidden;
+
+  place-items: center;
+
+}
+
+.landmark h3 {
+  width: 80%;
+  text-align: center;
 }
 
 .videoWrapper {

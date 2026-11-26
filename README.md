@@ -1,6 +1,7 @@
 # NYC Landmarks
 
 ## Project Overview
+This website is made for people visiting New York City who want to know about and tour its major landmarks.  The overall aesthetic is vibrant with bright colors and contrast, formatted similarly to a children's book or magazine. The main problem it solves is providing a straight forward list of recomendations, as the amount of available landmarks and attractions in New York City can be overwhelming to plan for by oneself.
 
 ## Target Audience
 
@@ -15,6 +16,9 @@ People who want information about some of New York City's major landmarks. They 
 - Scan headings, text, and navigation easily while using the site on the go.
 
 ### Creator Goals
+- Provide an aesthetically pleasing and easy-to-navigate experience.
+- Create a format that can be viewed both on many different devices.
+- Create well organized and formatted code that uses the proper conventions such as media queries and variables, and avoiding unecessary repetition.
 
 ## Scope of Work
 

@@ -21,13 +21,7 @@
 }
 */
 
-:root {
-  --heading-color: #FFEE32;
-  --background-color:#149CBE;
-  --text-color: white;
-  --secondary-background-color: #00CCFF ;
-  --secondary-text-color: #B32356 ;
-}
+@import url('./tokens.css');
 
 /* basic responsive image css */
 body {

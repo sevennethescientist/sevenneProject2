@@ -8,6 +8,7 @@ This website is made for people visiting New York City who want to know about an
 People who want information about some of New York City's major landmarks. They may be comparing places to visit while planning at home or looking up information on a phone while traveling around the city. The site should help them quickly understand what each landmark offers and find links to visitor information and directions.
 
 ## Goals
+- N / A, User Goals are substantial.
 
 ### User Goals
 

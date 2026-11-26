@@ -165,6 +165,7 @@ section.featured-landmark {
 
 section {
   padding: 1rem;
+  margin: 1rem;
 }
 
 section.landmark-intro {
@@ -173,10 +174,9 @@ section.landmark-intro {
 
 .more-info {
   background-color: var(--secondary-background-color);
+  padding: 1rem;
 }
 
 .more-info h3 {
   color: var(--heading-color);
-  padding-left: 2rem;
-  padding-top: 2rem;
 }

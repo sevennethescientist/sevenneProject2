@@ -21,6 +21,7 @@
 }
 */
 
+/* Designed Mobile-first, media queries are for desktops and some tablets*/
 @import url('./tokens.css');
 
 /* basic responsive image css */
@@ -33,43 +34,50 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 100%;
   align-content: center;
 }
 
-img, video{
+img,
+video {
   max-width: 100%;
   height: auto;
 }
 
 
 h1 {
- display: flex;
+  display: flex;
   justify-content: center;
+
+  color: var(--heading-color);
+
   font-family: "Changa One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--heading-color);
-  font-size: 3.5em;
+  font-size: 4rem;
+  text-align: left;
 }
 
 h2 {
   display: flex;
   justify-content: center;
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
   color: var(--heading-color);
-  font-size: 3em;
+
+  font-family: "Changa One", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 3.5rem;
+  text-align: center;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
-  font-size: 1.2em;
+  font-size: 1.1rem;
   font-style: normal;
-  width: 90%;
+  width: 100%;
 }
 
 a {
@@ -87,7 +95,11 @@ a:hover {
 
 .site-title {
   font-family: "Roboto", sans-serif;
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
   font-optical-sizing: auto;
+  background-color: #000000;
   /* font-weight: <weight>; */
   font-size: 1.2em;
   font-style: normal;
@@ -97,35 +109,40 @@ section.featured-landmark {
   background-color: var(--secondary-background-color);
 }
 
-.landmarks-grid{
+.landmarks-grid {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  figure{ margin:0;} /* spacing */
+
+  figure {
+    margin: 0;
+  }
+
+  /* spacing */
 }
 
 .landmark {
   background-color: var(--secondary-background-color);
-  border: solid 0.25rem var(--heading-color);
+  /* border: solid 0.25rem var(--heading-color); */
 
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.2em;
   color: var(--secondary-text-color);
 
-  border-radius: 15px;
   overflow: hidden;
-
   place-items: center;
 
+  color: var(--background-color);
 }
 
+
 .landmark a {
-  color: var(--links-on-hover);
+  color: var(--heading-color);
 }
 
 .landmark a:hover {
-  color: var(--heading-color);
+  color: var(--background-color);
 }
 
 .landmark h3 {
@@ -134,42 +151,53 @@ section.featured-landmark {
 }
 
 .videoWrapper {
-	position: relative;
-	padding-top: 25px;
-	height: 0;
-  clear:both;
+  position: relative;
+  /* padding-top: 25px; */
+  height: 0;
+  clear: both;
 }
 
-.videoWrapper.ratio-16-9{
-    padding-bottom: 56.25%; /* 9 ÷ 16 = .5625 which is 56.25% */
+.videoWrapper.ratio-16-9 {
+  padding-bottom: 56.25%;
+  /* 9 ÷ 16 = .5625 which is 56.25% */
 }
 
-.videoWrapper.ratio-4-3{
-    padding-bottom: 75%; /* 3 ÷ 4 = .75 which is 75% */
+.videoWrapper.ratio-4-3 {
+  padding-bottom: 75%;
+  /* 3 ÷ 4 = .75 which is 75% */
 }
 
 .videoWrapper.ratio-9-16 {
-    padding-bottom: calc(100vh - 100px); /* Full height minus 100px (to account for possible fixed header or footer */
-    width: calc((100vh - 100px) * (9 / 16)); /* Calculate width based on 9:16 aspect ratio */
-    margin-inline: auto; /* center horizontally */
-    /* 9:16 */
+  padding-bottom: calc(100vh - 100px);
+  /* Full height minus 100px (to account for possible fixed header or footer */
+  width: calc((100vh - 100px) * (9 / 16));
+  /* Calculate width based on 9:16 aspect ratio */
+  margin-inline: auto;
+  /* center horizontally */
+  /* 9:16 */
 }
 
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 section {
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 section.landmark-intro {
   background-color: var(--secondary-background-color);
+}
+
+.landmark-intro figure {
+  margin-inline-start: 0.5rem;
+  margin-inline-end: 0.5rem;
+
 }
 
 .more-info {
@@ -179,4 +207,88 @@ section.landmark-intro {
 
 .more-info h3 {
   color: var(--heading-color);
+
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
+
+.more-info a {
+  color: var(--heading-color);
+  transition: .2s ease;
+  font-size: 1.2rem;
+}
+
+.more-info a:hover {
+  color: var(--links-on-hover);
+}
+
+.landmark-directions {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+#directions-title {
+  color: yellow;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-size: 1.1rem;
+  font-style: normal;
+  width: 100%;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+
+  font-size: 1.5rem;
+
+}
+
+/* Applies to tablets and laptop screens */
+@media (min-width: 600px) {
+  .landmark-information {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .landmark-more-images {
+    display: grid;
+    padding: 4rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    figure {
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+   .landmark-information {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .landmark-more-images {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    figure {
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
+/*   end min-width 1800 */

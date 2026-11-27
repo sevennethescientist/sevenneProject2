@@ -1,8 +1,9 @@
 :root {
     --heading-color: #FFEE32;
-    --background-color: #09beeb;
+    --secondary-heading: #21077D;
+    --background-color: #21077D;
     --text-color: white;
-    --secondary-background-color: #21077D;
+    --secondary-background-color: #09beeb;
     --secondary-text-color: #FFEE32;
     --links-on-hover: #FF70A2;
 }

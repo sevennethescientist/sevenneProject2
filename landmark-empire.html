@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire State Building | NYC Landmarks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navstyles.css">
+    <script src="nav.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+     <header>
+        <div class="topbar">
+            <div class="site-title"><a href="/">NYC Landmarks</a></div>
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="landmark-liberty.html">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+                <li><a href="landmark-yankee.html">Yankee Stadium</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-wonder.html">Wonder Wheel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landmark-intro">
+            <div class="landmark-intro_text">
+                <h1>Empire State Building</h1>
+                <p class="tagline">The Empire State Building is an Art Deco skyscraper in Midtown Manhattan that once held the title of world’s tallest building.</p>
+            </div>
+            <figure>
+                <img src="images/pexels-tracehudson-2424391.jpg"
+                    alt="Empire State Building with lower Manhattan in the background">
+                <figcaption><a href="https://www.pexels.com/photo/empire-state-building-2424391/" target="_blank"
+                        rel="noopener">Photo by Trace Hudson</a></figcaption>
+            </figure>
+        </section>
+
+        <div class="landmark-information">
+            <section class="landmark-about">
+                <h2>About</h2>
+                <p><strong>Built:</strong> Constructed in a record 1 year and 45 days from 1930–1931, the 102-story tower was designed by the firm Shreve, Lamb &amp; Harmon Associates and opened on May 1, 1931 with President Hoover pressing a button in Washington, D.C. that turned on the lights and opened the building.</p>
+                <p><strong>Today:</strong> Its history, iconic silhouette, and observation decks make it a global tourist destination, and official city and national landmark. Millions of people visit it every year.</p>
+                <div class="more-info">
+                    <h3>More Info</h3>
+                    <ul>
+                        <li><a href="https://www.esbnyc.com/about/history" target="_blank" rel="noopener">Empire State Building official website</a></li>
+                        <li><a href="https://www.esbnyc.com/visit" target="_blank" rel="noopener">Visitor info, tickets, and directions</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Empire_State_Building" target="_blank" rel="noopener">Wikipedia: Empire State Building</a></li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="landmark-directions">
+                <h3 id="directions-title">Directions</h3>
+                <p>Use the observatory visitor entrance at 20 West 34th Street, between Fifth and Sixth avenues.</p>
+                <ul class="directions-links">
+                    <li><a class="directions-link"
+                            href="https://www.google.com/maps/dir/?api=1&amp;destination=Empire%20State%20Building%20Observatory%2C%2020%20West%2034th%20Street%2C%20New%20York%2C%20NY%2010001">Get directions in Google Maps</a></li>
+                    <li><a class="directions-link"
+                            href="https://maps.apple.com/directions?destination=Empire%20State%20Building%20Observatory%2C%2020%20West%2034th%20Street%2C%20New%20York%2C%20NY%2010001">Get directions in Apple Maps</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="landmark-more-images">
+            <figure>
+                <img src="images/square/pexels-tracehudson-2424391.jpg"
+                    alt="Empire State Building with lower Manhattan in the background">
+                <figcaption><a href="https://www.pexels.com/photo/empire-state-building-2424391/"
+                        target="_blank" rel="noopener">Photo by Trace Hudson</a></figcaption>
+            </figure>
+        </div>
+
+        <nav id="pagination" aria-label="Landmark navigation">
+            <a class="btn" rel="prev" href="landmark-liberty.html">← Previous</a>
+            <a class="btn" rel="next" href="landmark-ferry.html">Next →</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>Site by Sevenne Singh</p>
+    </footer>
+</body>
+
+</html>

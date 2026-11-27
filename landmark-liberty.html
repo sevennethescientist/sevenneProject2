@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statue of Liberty | NYC Landmarks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navstyles.css">
+    <script src="nav.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="site-title"><a href="/">NYC Landmarks</a></div>
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="landmark-liberty.html">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+                <li><a href="landmark-yankee.html">Yankee Stadium</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-wonder.html">Wonder Wheel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landmark-intro">
+            <div class="landmark-intro_text">
+                <h1>Statue of Liberty</h1>
+                <p class="tagline">The Statue of Liberty stands in New York Harbor as an enduring symbol of freedom and friendship between nations.</p>
+            </div>
+            <figure>
+                <img src="images/pexels-mora-versio-2150673251-34091093.jpg"
+                    alt="Statue of Liberty from below looking up at it">
+                <figcaption><a href="https://www.pexels.com/photo/statue-of-liberty-in-new-york-city-usa-34091093/"
+                        target="_blank" rel="noopener">Photo by Mora Versio</a></figcaption>
+            </figure>
+        </section>
+
+        <div class="landmark-information">
+            <section class="landmark-about">
+                <h2>About</h2>
+                <p><strong>Built:</strong> Built in France and dedicated in 1886, the statue was presented as a gift from the people of France to the United States. It was designed by Frédéric Auguste Bartholdi and engineered in part by Gustave Eiffel, then shipped in sections and re-assembled on what is now Liberty Island.</p>
+                <p><strong>Today:</strong> Over time it became a meaningful landmark for both Americans and immigrants entering America through nearby Ellis Island. Today its location is a national park and it is open to a limited number of visitors. While immigrants no longer enter through Ellis Island, it remains a landmark and symbol of the United States.</p>
+                <div class="more-info">
+                    <h3>More Info</h3>
+                    <ul>
+                        <li><a href="https://www.nps.gov/stli/" target="_blank" rel="noopener">National Park Service — Statue of Liberty overview</a></li>
+                        <li><a href="https://www.cityexperiences.com/new-york/city-cruises/statue/" target="_blank" rel="noopener">Tickets</a></li>
+                        <li><a href="https://www.nps.gov/stli/planyourvisit/directions.htm" target="_blank" rel="noopener">How to get to Liberty Island &amp; visit the statue (directions)</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Statue_of_Liberty" target="_blank" rel="noopener">Wikipedia: Statue of Liberty</a></li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="landmark-directions">
+                <h3 id="directions-title">Directions</h3>
+                <p>For a visit starting in Manhattan, go to Castle Clinton in The Battery for the Statue City Cruises ferry to Liberty Island. The map links lead to the mainland departure area, not to the statue itself.</p>
+                <ul class="directions-links">
+                    <li><a class="directions-link"
+                            href="https://www.google.com/maps/dir/?api=1&amp;destination=Castle%20Clinton%20National%20Monument%2C%20The%20Battery%2C%20New%20York%2C%20NY">Get directions in Google Maps</a></li>
+                    <li><a class="directions-link"
+                            href="https://maps.apple.com/directions?destination=Castle%20Clinton%20National%20Monument%2C%20The%20Battery%2C%20New%20York%2C%20NY">Get directions in Apple Maps</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="landmark-more-images">
+            <figure>
+                <img src="images/square/pexels-mora-versio-2150673251-34091093.jpg"
+                    alt="Statue of Liberty from below looking up at it">
+                <figcaption><a href="https://www.pexels.com/photo/statue-of-liberty-in-new-york-city-usa-34091093/"
+                        target="_blank" rel="noopener">Photo by Mora Versio</a></figcaption>
+            </figure>
+        </div>
+
+        <nav id="pagination" aria-label="Landmark navigation">
+            <a class="btn" rel="prev" href="landmark-tram.html">← Previous</a>
+            <a class="btn" rel="next" href="landmark-empire.html">Next →</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>Site by Sevenne Singh</p>
+    </footer>
+</body>
+
+</html>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landmark Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navstyles.css">
+    <script src="nav.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +18,24 @@
 </head>
 
 <body>
-    <header>
-        <div class="site-title">NYC Landmarks</div>
+     <header>
+        <div class="topbar">
+            <div class="site-title"><a href="/">NYC Landmarks</a></div>
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="landmark-liberty.html">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+                <li><a href="landmark-yankee.html">Yankee Stadium</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-wonder.html">Wonder Wheel</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
